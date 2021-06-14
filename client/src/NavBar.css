@@ -1,0 +1,60 @@
+ 
+  button[type=submit] {
+    margin-left: 2%;
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border-radius: 10px;
+    will-change: transform;
+    transition: all 0.2s ease;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    color: #3f51b5;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    text-align: center;
+  }
+  button[type=submit]:hover {
+    background: #ffffff;
+    color: #3f51b5;
+  }
+  button[type=submit]:active {
+    font-size: 15px;
+    transform: translateY(1px);
+  }
+  button[type=submit].active {
+    font-size: 0;
+    border-radius: 25px;
+    width: 50px;
+    background: transparent;
+  }
+  button[type=submit].loader {
+    border-right: 2px solid #3f51b5;
+    -webkit-animation: loader 0.4s linear infinite;
+            animation: loader 0.4s linear infinite;
+  }
+  button[type=submit].success {
+    background: #3BB873;
+    border-color: #3BB873;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  @-webkit-keyframes loader {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
